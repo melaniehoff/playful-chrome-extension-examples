@@ -1,1 +1,1 @@
-# chrome-extension-mashup
+# PLAYFUL CHROME EXTENSION EXAMPLES
