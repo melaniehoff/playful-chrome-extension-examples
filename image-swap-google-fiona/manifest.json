@@ -1,0 +1,19 @@
+﻿{
+  "manifest_version": 2,
+    "version": "1.0",
+  "name": "Garden Grow",
+  "description": "Swap those pics",
+  "browser_action": {
+    "default_icon": "19.png"
+  },
+  "icons": { "19": "19.png",
+       "48": "48.png",
+      "128": "128.png"
+},
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["swap.js"]
+    }
+  ]
+  }
