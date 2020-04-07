@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Eyeballs",
+  "version": "1.0",
+  "description": "This extension spies on user web activity for an unnerving experience",
+  "browser_action": {
+    "default_icon": "eye.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
