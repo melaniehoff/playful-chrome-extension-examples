@@ -17,9 +17,10 @@ function setup(){
   let img = createImg('pic/' + n + '.png');
   img.size(530,480);
   img.position(30,150);
-  let words = ['apple', 'bird', 'cat', 'dog', 'eagle'];
+  let n1 = n-1
+  let words = ['people', 'bed', 'gun', 'extra', 'eagle'];
   textSize(32);
-  text(words[n], 10, 30);
+  text(words[n1], 10, 30);
   fill(0, 102, 153);
 
 }

@@ -22,9 +22,12 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     var t = document.createTextNode("${text}"); // Create a text element
     h.appendChild(t); // Append the text node to the H1 element
     document.body.insertBefore(h, document.body.childNodes[0]);
+
     h.setAttribute("id", "header");
     document.getElementById("header").style.color = "violet";
     document.getElementById("header").style.padding = "2em";
+    document.getElementById("header").style.textAlign = "center";
+
 
     var p_tags=document.getElementsByTagName('p');
     for(i=0;i<p_tags.length;i++)
@@ -34,7 +37,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
 
     var images = [
     "https://media.giphy.com/media/l41YgOPSjVe47TTRm/giphy.gif",
-    "https://media.giphy.com/media/3o7buctjKD8g5r4544/giphy.gif",
+    "https://media.giphy.com/media/3o7buctjKD8g5r4544/giphy.gif"
     ];
 
     for (var i in document.images) {
@@ -44,6 +47,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
         var width = targetImage.width;
 
         targetImage.src = randomImage;
+        targetImage.srcset = "";
         targetImage.height = height;
         targetImage.width = width;
     }

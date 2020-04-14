@@ -2,7 +2,7 @@
 
 This demonstrates the "omnibox" API.
 
-After installing this extension, type "color" followed by the <kbd>tab</kbd> key.
+After installing this extension, type "change" followed by the <kbd>tab</kbd> key.
 Then type a word.
 
 Uses the `chrome.tabs.executeScript` API and the "activeTab" permission so that it can
