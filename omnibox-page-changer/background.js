@@ -18,8 +18,18 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   chrome.tabs.executeScript({
     code:
     `
+
+
     var h = document.createElement("H1"); // Create the H1 element
-    var t = document.createTextNode("${text}"); // Create a text element
+
+    if ("${text}" == "easter") {
+      console.log("ITS EASTERRRR");
+      var t = document.createTextNode("THE EASTER BUNNY IS COMING TO GET YOU!!??????");
+    } else {
+      var t = document.createTextNode("${text}");
+    }
+
+
     h.appendChild(t); // Append the text node to the H1 element
     document.body.insertBefore(h, document.body.childNodes[0]);
 
