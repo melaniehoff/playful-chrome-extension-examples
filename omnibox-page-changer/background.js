@@ -18,11 +18,6 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   chrome.tabs.executeScript({
     code:
     `
-    var images = [
-    "https://media.giphy.com/media/l41YgOPSjVe47TTRm/giphy.gif",
-    "https://media.giphy.com/media/3o7buctjKD8g5r4544/giphy.gif",
-    ];
-
     var h = document.createElement("H1"); // Create the H1 element
     var t = document.createTextNode("${text}"); // Create a text element
     h.appendChild(t); // Append the text node to the H1 element
@@ -36,6 +31,11 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     {
         p_tags[i].setAttribute("style","font-size:"+40+"px");
     }
+
+    var images = [
+    "https://media.giphy.com/media/l41YgOPSjVe47TTRm/giphy.gif",
+    "https://media.giphy.com/media/3o7buctjKD8g5r4544/giphy.gif",
+    ];
 
     for (var i in document.images) {
         var targetImage = document.images[i];
