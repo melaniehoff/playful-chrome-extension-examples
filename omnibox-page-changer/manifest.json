@@ -1,0 +1,10 @@
+{
+  "name": "Omnibox Page Changer",
+  "manifest_version": 2,
+  "version": "0.1",
+  "omnibox": { "keyword": "change" },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["activeTab"]
+}
